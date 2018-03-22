@@ -515,7 +515,8 @@ header{
 			padding: 7px 20px;
 			border:none;
 		}
-		input::-webkit-input-placeholder{
+		input::-webkit-input-placeholder,
+		input::placeholder{
 				color:#f45a40;
 		}
 		.subscribe-form .email-sbs:focus{
@@ -552,7 +553,7 @@ footer{
 		margin-bottom:20px;
 	}
 	.ftr h3{
-		font-weight: medium;
+		font-weight: 500;
 		font-size:0.875em;
 		padding-top: 5px;
 	}
@@ -594,7 +595,8 @@ footer{
 		margin-top: 5px;
 		border: none;
 	}
-	input::-webkit-input-placeholder{
+	input::-webkit-input-placeholder,
+	input::placeholder{
 			color:#7e7f84;
 	}
 	input::-moz-placeholder{
@@ -767,9 +769,6 @@ footer{
 			margin-left: 2%;
 			margin-right: 2%
 		}
-		/*.contakt-basket{
-			display:table; margin:0 auto;
-		}*/
 		.my-slider ul li h2{
 			top:50px; font-size:1.275em;
 		}
@@ -783,8 +782,9 @@ footer{
 		.block4-main article{
 				width:95%; margin:0 2.5% 30px;
 		}
+	}
 	@media screen and (max-width:385px){
-		.contakt-basket p{
+		.contakt-basket p {
 			width: 100%;
 			margin:5px auto;
 		}
