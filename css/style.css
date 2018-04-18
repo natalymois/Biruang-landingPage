@@ -224,19 +224,21 @@ header{
     z-index: 3;
   }
   .drop-menu li {
-		width: 100%;
+    width: 100%;
     background: rgba(192,192,194,0.3);
     border-bottom: 1px solid #fff;
     box-shadow: 0 2px 5px #696A70;
     border-radius: 3px;
+	transform: skewX(20deg);
   }
 	.drop-menu li:hover {
 		background: rgba(192,192,194,0.2);
 	}
   .drop-menu li a {
 		width: 100%;
-    padding: 8px 30px;
-		color: #7e7f84;
+        padding: 8px 30px;
+		color: #111;
+		font-weight: 600;
 		text-decoration: none;
 		text-transform: uppercase;
   }
@@ -260,11 +262,12 @@ header{
     top: -3px;
   }
   .mobi-hover.open + .drop-menu {
-		height: auto;
+    position: absolute;
+	height: auto;
     transform: rotateX(0deg);
     opacity: 1;
     visibility: visible;
-		margin-bottom: 5px
+	margin-bottom: 5px
   }
 	/*---/ конец мобильного меню---*/
   nav.menu {
